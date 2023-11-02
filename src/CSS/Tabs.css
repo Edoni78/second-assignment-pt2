@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    padding: 4% 4%;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+.tablists{
+    /* padding: 4%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: max(5px,1vw);
+    padding: 1% 4% 4% 4%;
+    flex-wrap: wrap;
+    
+}
+
+.tablists .tab{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+.tab:hover{
+    color: blue;
+    transition: 0.3 ease;
+}
+
+.tabPanel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: max(30px,2.3vw);
+}
+
+.tab.react-tabs__tab--selected{
+    border-bottom: 2px solid blue;
+    outline: none;
+}
+

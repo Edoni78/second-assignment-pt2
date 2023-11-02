@@ -1,0 +1,89 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: max(35px,2vw);
+    width: 20%;
+    padding: 3% 1%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffff;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: max(10px, 0.2vw);
+    justify-content: center;
+    align-items: center;
+}
+.card-price{
+    font-size: max(16px,1.3vw);
+}
+
+.card-sale{
+    font-size: max(13px,1vw);
+    color: darkgray;
+}
+
+.card-header h3{
+    font-size: max(20px,1.5vw);
+    text-align: center;
+}
+
+
+
+.card-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+}
+
+button{
+    width: max(220px,5vw);
+    height: max(30px,0.5vw);
+    background-color: transparent;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: max(10px,0.2vw);
+    color: blue;
+    cursor: pointer;
+}
+
+button:hover{
+    background: blue;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+@media  screen and (max-width:1200px) {
+    .card{
+        width: 25%;
+        
+    }
+}
+
+@media  screen and (max-width:1030px) {
+    .card{
+        width: 40%;
+    }
+}
+
+@media  screen and (max-width:950px) {
+    .card{
+        width: 45%;
+    }
+}
+@media  screen and (max-width:610px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .card{
+        width: 90%;
+    }
+}
